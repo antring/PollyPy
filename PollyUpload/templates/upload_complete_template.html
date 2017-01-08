@@ -1,0 +1,10 @@
+{% extends 'main_template.html' %}
+{% block title %} {{ block.super }} - Upload Complete {% endblock %}
+
+{% block mainbody %}
+    {{ msg }}
+    <br>
+    {% for i in subs %}
+        {{ i.name }} S{{ i.season }} E{{ i.episode }} <br>
+    {% endfor %}
+{% endblock %}
