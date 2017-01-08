@@ -1,6 +1,7 @@
-from django.conf.urls import url, include
-from .views import tvupload
+from django.conf.urls import url
+from .views import tvupload, movieupload
 
 urlpatterns = [
-    url(r'^', view=tvupload)
+    url(r'tv', view=tvupload),
+    url(r'movie', view=movieupload)
 ]

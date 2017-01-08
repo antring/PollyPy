@@ -88,5 +88,11 @@ ENV/
 # Rope project settings
 .ropeproject
 
+# DB
+db.sqlite3
+
 #Stuff
 .idea
+notes.txt
+
+Polly/migrations
