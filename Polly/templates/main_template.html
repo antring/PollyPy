@@ -4,11 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %} PollyPy{% endblock %}</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/stylesheet.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
 </head>
 <body>
-{% block mainbody %}
-    Content
-{% endblock %}
+<nav class="navbar navbar-inverse navbar-collapse">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#"> PollyPy </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/upload/tv">TV</a></li>
+                <li><a href="/upload/movie">Film</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    {% block mainbody %}
+        Content
+    {% endblock %}
+</div>
 </body>
 </html>

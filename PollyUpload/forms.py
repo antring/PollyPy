@@ -6,11 +6,11 @@ class TvForm(ModelForm):
 
     class Meta:
         model = TvSub
-        fields = ['name', 'season', 'episode', 'lang']
+        fields = ['name', 'season', 'episode', 'lang', 'path']
 
 
 class MovieForm(ModelForm):
 
     class Meta:
         model = MovieSub
-        fields = ['name', 'year', 'lang']
+        fields = ['name', 'year', 'lang', 'path']
