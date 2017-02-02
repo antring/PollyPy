@@ -96,3 +96,4 @@ db.sqlite3
 notes.txt
 
 Polly/migrations
+/db.sqlite3

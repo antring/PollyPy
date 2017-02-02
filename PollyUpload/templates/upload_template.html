@@ -1,15 +1,23 @@
 {% extends 'main_template.html' %}
-{% block title %} {% endblock %}
-{% block mainbody %}
-    Please do the needful
-<div class="form-group">
-    <form method="post" >
-        {% csrf_token %}
-        {{ form }}
-        <div>
-            <button name="submit">Submit</button>
-        </div>
-    </form>
-</div>
 
+{% block title %}
+    {{ block.super }} - {{ formtype }}
+{% endblock %}
+
+{% block mainbody %}
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Please do the needful
+        </div>
+
+        <div class="panel-body">
+            <form method="post">
+                {% csrf_token %}
+                {{ form }}
+                <div>
+                    <button name="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
 {% endblock %}
